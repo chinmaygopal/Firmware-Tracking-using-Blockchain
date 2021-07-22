@@ -1,0 +1,41 @@
+docker-compose up -d --remove-orphans
+cd ..
+./createChannel.sh 
+./deployChaincode.sh
+docker kill $(docker ps -q) 
+docker rm $(docker ps -a -q)
+cd artifacts/
+docker-compose up -d --remove-orphans
+docker ps
+docker ps -a
+cd ..
+./createChannel.sh 
+./deployChaincode.sh
+cd api-
+cd api-1.4/
+nodemon app.js
+node app.js
+npm install log4js
+node app.js
+npm install express-jwt
+node app.js
+go
+cd ..
+cd artifacts/
+ls
+cd channel/
+ls
+cd ..
+ls
+cd src/github.com/fabcar
+ls
+cd go/
+ls
+go firmware_update_contract.go 
+go build firmware_update_contract.go 
+ls
+go build firmware_update_contract.go 
+go fabcar.go 
+go build fabcar 
+ls
+go build fabcar.go

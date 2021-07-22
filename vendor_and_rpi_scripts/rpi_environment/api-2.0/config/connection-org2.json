@@ -1,0 +1,49 @@
+{
+    "name": "first-network-org2",
+    "version": "1.0.0",
+    "client": {
+        "organization": "Org2",
+        "connection": {
+            "timeout": {
+                "peer": {
+                    "endorser": "300"
+                }
+            }
+        }
+    },
+    "organizations": {
+        "Org2": {
+            "mspid": "Org2MSP",
+            "peers": [
+                "peer0.org2.firmwareupdate.com"
+            ],
+            "certificateAuthorities": [
+                "ca.org2.firmwareupdate.com"
+            ]
+        }
+    },
+    "peers": {
+        "peer0.org2.firmwareupdate.com": {
+            "url": "grpcs://172.16.21.128:9051",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICdjCCAhugAwIBAgIQQLIOjzhinCLp5eAEbxi7XDAKBggqhkjOPQQDAjCBhDEL\nMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBG\ncmFuY2lzY28xIDAeBgNVBAoTF29yZzIuZmlybXdhcmV1cGRhdGUuY29tMSYwJAYD\nVQQDEx10bHNjYS5vcmcyLmZpcm13YXJldXBkYXRlLmNvbTAeFw0yMTA1MTExNDM3\nMDBaFw0zMTA1MDkxNDM3MDBaMIGEMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2Fs\naWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZyYW5jaXNjbzEgMB4GA1UEChMXb3JnMi5m\naXJtd2FyZXVwZGF0ZS5jb20xJjAkBgNVBAMTHXRsc2NhLm9yZzIuZmlybXdhcmV1\ncGRhdGUuY29tMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEsTM7fUqZiJ6DscKp\nRqwggXQhZM8RQDTtHcFejGDCyOdlEpqfpX9tJqg1x7mFX6QcIufj5s4mh2O1bVSg\nTcc0vKNtMGswDgYDVR0PAQH/BAQDAgGmMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggr\nBgEFBQcDATAPBgNVHRMBAf8EBTADAQH/MCkGA1UdDgQiBCBjp96TK2WSW7OvZbr4\nBT6mm9FOQWFmkm2SO3iLgiUdRDAKBggqhkjOPQQDAgNJADBGAiEAlGfNEAVtluGU\nk3Nh3rAxtbo3xlZITlhZsskSUywSL9ACIQC5PSSKa4x055q7ZNbTggArOH6iisQr\n3HmYWpuav7aViw==\n-----END CERTIFICATE-----\n"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "peer0.org2.firmwareupdate.com",
+                "hostnameOverride": "peer0.org2.firmwareupdate.com"
+            }
+        }	
+    },
+    "certificateAuthorities": {
+        "ca.org2.firmwareupdate.com": {
+            "url": "https://172.16.21.128:8054",
+            "caName": "ca.org2.firmwareupdate.com",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICdjCCAhugAwIBAgIQQLIOjzhinCLp5eAEbxi7XDAKBggqhkjOPQQDAjCBhDEL\nMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBG\ncmFuY2lzY28xIDAeBgNVBAoTF29yZzIuZmlybXdhcmV1cGRhdGUuY29tMSYwJAYD\nVQQDEx10bHNjYS5vcmcyLmZpcm13YXJldXBkYXRlLmNvbTAeFw0yMTA1MTExNDM3\nMDBaFw0zMTA1MDkxNDM3MDBaMIGEMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2Fs\naWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZyYW5jaXNjbzEgMB4GA1UEChMXb3JnMi5m\naXJtd2FyZXVwZGF0ZS5jb20xJjAkBgNVBAMTHXRsc2NhLm9yZzIuZmlybXdhcmV1\ncGRhdGUuY29tMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEsTM7fUqZiJ6DscKp\nRqwggXQhZM8RQDTtHcFejGDCyOdlEpqfpX9tJqg1x7mFX6QcIufj5s4mh2O1bVSg\nTcc0vKNtMGswDgYDVR0PAQH/BAQDAgGmMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggr\nBgEFBQcDATAPBgNVHRMBAf8EBTADAQH/MCkGA1UdDgQiBCBjp96TK2WSW7OvZbr4\nBT6mm9FOQWFmkm2SO3iLgiUdRDAKBggqhkjOPQQDAgNJADBGAiEAlGfNEAVtluGU\nk3Nh3rAxtbo3xlZITlhZsskSUywSL9ACIQC5PSSKa4x055q7ZNbTggArOH6iisQr\n3HmYWpuav7aViw==\n-----END CERTIFICATE-----\n"
+            },
+            "httpOptions": {
+                "verify": false
+            }
+        }
+    }
+}
